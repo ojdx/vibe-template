@@ -18,7 +18,7 @@ const config = {
   domainName,
   isProduction: projectConfig.helpers.isProductionBranch(branchName),
   branchName,
-  certificateArn: projectConfig.aws.certificateArn,
+  certificateArn: projectConfig.aws.domain.certificateArn,
   env: {
     account: projectConfig.aws.accountId,
     region: projectConfig.aws.region,

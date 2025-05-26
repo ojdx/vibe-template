@@ -48,7 +48,7 @@ class WebsiteStack extends cdk.Stack {
         {
           id: 'DeleteOldLogs',
           enabled: true,
-          expiration: cdk.Duration.days(projectConfig.s3.logRetentionDays), // Configurable log retention
+          expiration: cdk.Duration.days(projectConfig.aws.s3.logRetentionDays), // Configurable log retention
         },
       ],
     });
@@ -67,7 +67,7 @@ class WebsiteStack extends cdk.Stack {
       certificate,
       minimumProtocolVersion: cloudfront.SecurityPolicyProtocol.TLS_V1_2_2021,
       httpVersion: cloudfront.HttpVersion.HTTP2_AND_3,
-      priceClass: cloudfront.PriceClass[projectConfig.cloudfront.priceClass], // Configurable price class
+      priceClass: cloudfront.PriceClass[projectConfig.aws.cloudfront.priceClass], // Configurable price class
       defaultRootObject: projectConfig.deployment.indexDocument,
       enableLogging: true,
       logBucket: this.logsBucket,
@@ -78,13 +78,13 @@ class WebsiteStack extends cdk.Stack {
           httpStatus: 404,
           responseHttpStatus: 404,
           responsePagePath: `/${projectConfig.deployment.errorDocument}`,
-          ttl: cdk.Duration.minutes(projectConfig.cloudfront.cacheTTL.error404),
+          ttl: cdk.Duration.minutes(projectConfig.aws.cloudfront.cacheTTL.error404),
         },
         {
           httpStatus: 403,
           responseHttpStatus: 404,
           responsePagePath: `/${projectConfig.deployment.errorDocument}`,
-          ttl: cdk.Duration.minutes(projectConfig.cloudfront.cacheTTL.error403),
+          ttl: cdk.Duration.minutes(projectConfig.aws.cloudfront.cacheTTL.error403),
         },
       ],
     });

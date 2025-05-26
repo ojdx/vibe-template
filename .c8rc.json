@@ -16,6 +16,9 @@
     "scripts/setup-wiki.sh",
     "scripts/cdk-wrapper.js",
     "scripts/configure-repo-settings.js",
+    "scripts/get-config.js",
+    "scripts/setup-template.js",
+    "scripts/copy-to-template.sh",
     "infrastructure/**"
   ],
   "reporter": [
