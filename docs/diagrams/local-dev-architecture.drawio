@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2025-05-25T14:00:00.000Z" agent="5.0" etag="elmersho-local-dev" version="21.0.0" type="device">
+  <diagram name="Local Development Architecture" id="local-dev-arch">
+    <mxGraphModel dx="1106" dy="613" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Title -->
+        <mxCell id="title-1" value="elmersho Local Development Environment" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="200" y="20" width="450" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Developer Box -->
+        <mxCell id="dev-1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;dashed=1" parent="1" vertex="1">
+          <mxGeometry x="40" y="100" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dev-2" value="Developer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14" parent="1" vertex="1">
+          <mxGeometry x="40" y="100" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dev-3" value="Browser" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12" parent="1" vertex="1">
+          <mxGeometry x="40" y="130" width="160" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrow from Developer to Server -->
+        <mxCell id="arrow-1" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0" parent="1" source="dev-1" target="server-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="340" as="sourcePoint" />
+            <mxPoint x="390" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow-label-1" value="http://localhost:3000" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11" vertex="1" connectable="0" parent="arrow-1">
+          <mxGeometry x="-0.1" y="-15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Node.js Server Box -->
+        <mxCell id="server-1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf" parent="1" vertex="1">
+          <mxGeometry x="280" y="80" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="server-2" value="Node.js Server" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="280" y="80" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="server-3" value="server.js" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontFamily=Courier New" parent="1" vertex="1">
+          <mxGeometry x="280" y="110" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="server-4" value="• Hot Reloading&#xa;• MIME Type Handling&#xa;• SSE for Live Updates" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10" parent="1" vertex="1">
+          <mxGeometry x="290" y="130" width="180" height="45" as="geometry" />
+        </mxCell>
+        
+        <!-- File System Box -->
+        <mxCell id="fs-1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366" parent="1" vertex="1">
+          <mxGeometry x="560" y="80" width="240" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="fs-2" value="File System" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="560" y="80" width="240" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- public-www directory -->
+        <mxCell id="pw-1" value="public-www/" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontFamily=Courier New" parent="1" vertex="1">
+          <mxGeometry x="580" y="120" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- HTML files -->
+        <mxCell id="html-1" value="index.html" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontFamily=Courier New" parent="1" vertex="1">
+          <mxGeometry x="590" y="160" width="80" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="html-2" value="error.html" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontFamily=Courier New" parent="1" vertex="1">
+          <mxGeometry x="690" y="160" width="80" height="25" as="geometry" />
+        </mxCell>
+        
+        <!-- Assets directory -->
+        <mxCell id="assets-1" value="assets/" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontFamily=Courier New" parent="1" vertex="1">
+          <mxGeometry x="590" y="195" width="180" height="25" as="geometry" />
+        </mxCell>
+        
+        <!-- JS files -->
+        <mxCell id="js-1" value="app.js" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontFamily=Courier New" parent="1" vertex="1">
+          <mxGeometry x="600" y="230" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="js-2" value="script.js" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontFamily=Courier New" parent="1" vertex="1">
+          <mxGeometry x="660" y="230" width="60" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- CSS file -->
+        <mxCell id="css-1" value="styles.css" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontFamily=Courier New" parent="1" vertex="1">
+          <mxGeometry x="600" y="260" width="70" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrow from Server to File System -->
+        <mxCell id="arrow-2" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0" parent="1" source="server-1" target="fs-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="340" as="sourcePoint" />
+            <mxPoint x="390" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow-label-2" value="File Watch&#xa;Read/Serve" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11" vertex="1" connectable="0" parent="arrow-2">
+          <mxGeometry x="-0.1" y="-20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Features Box -->
+        <mxCell id="features-1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1" parent="1" vertex="1">
+          <mxGeometry x="40" y="220" width="440" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="features-2" value="Key Features" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="40" y="220" width="440" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="features-3" value="• Hot Reloading: Auto-refresh on file changes&#xa;• MIME Type Support: HTML, CSS, JS, JSON, Images&#xa;• Error Handling: Serves error.html for 404s&#xa;• SSE Integration: Real-time updates without polling" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11" parent="1" vertex="1">
+          <mxGeometry x="50" y="240" width="420" height="55" as="geometry" />
+        </mxCell>
+        
+        <!-- Port Info -->
+        <mxCell id="port-1" value="Port: 3000" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="330" y="185" width="100" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

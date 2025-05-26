@@ -1,0 +1,21 @@
+node_modules/
+.DS_Store
+*.log
+coverage/
+.nyc_output/
+.c8_output/
+.env
+.env.local
+.env.*.local
+elmersho.wiki/
+
+# CDK
+cdk.out/
+*.d.ts
+*.js.map
+
+# Temporary diagram files
+.$aws-*
+
+# Backup files
+*.backup
